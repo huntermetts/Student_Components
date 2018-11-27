@@ -83,20 +83,20 @@ let students = [
 let containerRef = document.querySelector("#container");
 
 // h1 Function
-const h1 = (title, style) => {
-    return `<h1 class="${style}">${title}</h1>`
+const h1 = (...props) => {
+    return `<h1 class="${props[1]}">${props[0]}</h1>`
 }
 
 
 // section Function
-const section = (title, style) => {
-    return `<section class="bordered dashed ${style}">${title}</section>`
+const section = (...props) => {
+    return `<section class="bordered dashed ${props[1]}">${props[0]}</section>`
 }
 
 
 // aside Function
-const aside = (title, style) => {
-    return `<aside class="${style}">${title}</aside>`
+const aside = (...props) => {
+    return `<aside class="${props[1]}">${props[0]}</aside>`
 }
 
 
